@@ -6,11 +6,7 @@ public class BubbleSortExample28 {
         for (int i=0; i<intData.length; i++){
             for (int j=1; j<intData.length-i; j++){
                 if (intData[j-1] < intData[j]) {
-<<<<<<< HEAD
-                   
-=======
-                    
->>>>>>> c6922616e7736336003ca3f50fe41f1d2b810d4f
+
                     temp =intData[j];
                     intData[j]=intData[j-1];
                     intData[j-1]=temp;
