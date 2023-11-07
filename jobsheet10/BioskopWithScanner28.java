@@ -23,10 +23,9 @@ public class BioskopWithScanner28 {
             System.out.println("input penonton lainnya? (y/n): ");
             next = input28.nextLine();
 
-            if (next.equalsIgnoreCase("n")) {
-                break;
+            
             }
         }
     }
     
-}
+
