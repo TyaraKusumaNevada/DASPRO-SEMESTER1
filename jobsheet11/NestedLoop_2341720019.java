@@ -10,21 +10,20 @@ public class NestedLoop_2341720019 {
             System.out.println("Kota ke-" + i);
             for (int j = 0; j < temps[0].length; j++) { 
                 System.out.print("Hari ke-" + (j + 1) + ": "); 
-            temps[i][j] = Sc28.nextDouble();
+                temps[i][j] = Sc28.nextDouble();
             }
             System.out.println();
         }
+        
         
         for (int i = 0; i < temps.length; i++) { 
             System.out.print("Kota ke-" + (i + 1) + ": "); 
-            for (int j = 0; j < temps[0].length; j++) {
-            System.out.print(temps[i][j] + " ");
+            for (double temp : temps[i]) {
+                System.out.print(temp + " ");
             }
             System.out.println();
         }
-        
-        
-
     }
-    
 }
+
+
