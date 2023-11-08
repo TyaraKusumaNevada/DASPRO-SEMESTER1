@@ -18,12 +18,13 @@ public class NestedLoop_2341720019 {
         
         for (int i = 0; i < temps.length; i++) { 
             System.out.print("Kota ke-" + (i + 1) + ": "); 
+            double total = 0;
             for (double temp : temps[i]) {
                 System.out.print(temp + " ");
+                total += temp;
             }
-            System.out.println();
+            double rataRata = total / temps[i].length;
+            System.out.println("Rata-rata: " + rataRata);
         }
     }
 }
-
-
