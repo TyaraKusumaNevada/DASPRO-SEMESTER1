@@ -27,7 +27,7 @@ public class BioskopWithScanner28 {
                     kolom = input28.nextInt();
                     input28.nextLine();
 
-                    // Periksa validitas baris dan kolom
+                    
                     if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data penonton berhasil dimasukkan.");
@@ -60,5 +60,5 @@ public class BioskopWithScanner28 {
             }
         }
     }
-            
+
 }
