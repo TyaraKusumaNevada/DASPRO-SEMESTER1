@@ -7,7 +7,7 @@ public class Star28 {
         System.out.println("masukkan nilai N =") ;
         int N = input28.nextInt();
 
-        for(int i=1;i<=N; i++){
+        for(int i=0;i<=N; i++){
             System.out.print("*");
         }
 
