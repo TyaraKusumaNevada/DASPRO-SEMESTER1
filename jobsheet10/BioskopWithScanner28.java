@@ -14,6 +14,7 @@ public class BioskopWithScanner28 {
             System.out.println("2. Tampilkan daftar penonton");
             System.out.println("3. Exit");
             System.out.print("Pilih menu (1/2/3): ");
+            
             int choice = input28.nextInt();
             input28.nextLine(); 
 
@@ -21,20 +22,26 @@ public class BioskopWithScanner28 {
                 case 1:
                     System.out.println("Masukkan nama: ");
                     nama = input28.nextLine();
+                   boolean seatNotAvailable = true; 
+            
+                 while (seatNotAvailable) {
                     System.out.println("Masukkan baris: ");
                     baris = input28.nextInt();
                     System.out.println("Masukkan kolom: ");
                     kolom = input28.nextInt();
                     input28.nextLine();
-
-                    
-                    if (baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2) {
+            
+                    if (isValidSeat(baris, kolom, penonton)) {
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data penonton berhasil dimasukkan.");
+                        seatNotAvailable = false;
                     } else {
-                        System.out.println("Baris atau kolom tidak valid. Data penonton tidak masuk.");
+                        System.out.println("Maaf, kursi sudah terisi atau tidak valid. Silakan pilih kursi lain.");
                     }
-                    break;
+                 }
+                 break;
+            
+            
                 case 2:
                     System.out.println("Daftar Penonton:");
                     for (int i = 0; i < 4; i++) {
