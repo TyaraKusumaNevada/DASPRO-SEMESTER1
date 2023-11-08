@@ -32,7 +32,7 @@ public class BioskopWithScanner28 {
                         penonton[baris - 1][kolom - 1] = nama;
                         System.out.println("Data penonton berhasil dimasukkan.");
                     } else {
-                        System.out.println("Baris atau kolom tidak valid. Data penonton tidak dimasukkan.");
+                        System.out.println("Baris atau kolom tidak valid. Data penonton tidak masuk.");
                     }
                     break;
                 case 2:
@@ -60,5 +60,7 @@ public class BioskopWithScanner28 {
             }
         }
     }
-
+    boolean isValidSeat(int baris, int kolom, String[][] penonton) {
+        return baris >= 1 && baris <= 4 && kolom >= 1 && kolom <= 2 && penonton[baris - 1][kolom - 1] == null;
+    }
 }
