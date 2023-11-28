@@ -1,12 +1,6 @@
 package jobsheet14;
 public class Percobaan1 {
 
-    public static void main(String[] args) {
-        System.out.println(faktorialRekrusif(5));
-        System.out.println(faktorialIteratif(5));
-    }
-
-
 
     static int faktorialRekrusif(int n) {
         if (n==0){
@@ -22,6 +16,11 @@ public class Percobaan1 {
             faktor= faktor * i;
         }
         return faktor;
-        
     }
-}
+    public static void main(String[] args) {
+        System.out.println(faktorialRekrusif(5));
+        System.out.println(faktorialIteratif(5));
+        }
+    }
+    
+
