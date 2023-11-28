@@ -3,27 +3,30 @@ package jobsheet14;
 import java.util.Scanner;
 
 public class Percobaan2 {
-    importjava.util.Scanner;
+    
 
     public class Percoban2 {
         static int hitungPangkat (int x, int y) {
             if (y == 0) {
-                return (1);
+                return 1;
             }else {
-                return (x * hitungPangkat(x, y - 1));
+                System.out.println(x);
+                if(y !=1) {
+                    System.out.println("x");
+                }
+                return x * hitungPangkat(x, y - 1); 
             }
         }
 
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
-            int bilangan, pangkat;
-
             System.out.println("Bilangan yang dihitung: ");
-            bilangan = sc.nextInt();
+            int bilangan = sc.nextInt();
             System.out.println("Pangkat: ");
-            pangkat = sc.nextInt()
+            int pangkat = sc.nextInt();
 
-            System.out.println(hitungPangkat((bilangan), pangkat));
+            System.out.println("Hasil pangkat ");
+            System.out.println("-"+hitungPangkat(bilangan, pangkat));
             sc.close();
         }
     }
