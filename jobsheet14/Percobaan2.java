@@ -26,7 +26,7 @@ public class Percobaan2 {
             int pangkat = sc.nextInt();
 
             System.out.println("Hasil pangkat ");
-            System.out.println("-"+hitungPangkat(bilangan, pangkat));
+            System.out.println("="+hitungPangkat(bilangan, pangkat));
             sc.close();
         }
     }
